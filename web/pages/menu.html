@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+
+<html lang="en-nz">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible"
+    content="IE=edge" />
+  <title>The Haukai restaraunt menu page</title>
+  <meta name="Haukai restaraunt website"
+    content="This is the home page for the restaraunt" />
+  <meta name="author"
+    content="Joshua Fox" />
+  <meta name="description"
+    content="the menu page for the haukai restaraunt" />
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1" />
+  <meta name='description'
+    content='The Haukai restaurant Kerikeri with local and Maori menu'>.
+  <meta name="keywords"
+    content="Haukai, Restaurant, Kerikeri, Menu" />
+  <link rel="stylesheet"
+    href="https://www.w3schools.com/w3css/4/w3.css"
+    type="text/css" />
+  <link rel="stylesheet"
+    href="/css/css.css"
+    type="text/css" />
+    
+    <style>
+      .mySlides {
+        display: none
+      }
+    </style>
+</head>
+<!--This will contain the body of the home page it will use the semantic tags header nav main and footer for easy navigation by screen readers-->
+
+<body>
+  <!--The header element will contain the heading fror the web page-->
+  <header class="w3-container w3-dark-grey w3-mobile">
+    <h1 class="">The Haukai restaraunt</h1>
+  </header>
+  <!--The nav element will be a container for the navigation bar it uses w3 bar class-->
+  <nav class="w3-bar w3-light-grey w3-mobile">
+    <!--The anchor elemnts in this list use w3 class-->
+    <a href="/index.html"
+      class="w3-bar-item w3-button">Home</a>
+    <a href="contact.html"
+      class="w3-bar-item w3-button">Contact</a>
+    <a href="hours.html"
+      class="w3-bar-item w3-button">Hours</a>
+    <a href="menu.html "
+      class="w3-bar-item w3-button w3-grey">Menu</a>
+    <a href="reservations.html"
+      class="w3-bar-item w3-button">Reservations</a>
+    <a href="privacy.html"
+      class="w3-bar-item w3-button">Privacy Statement</a>
+
+  </nav>
+  <!--The main element is a container for the content of the webpage-->
+  <main class="w3-container w3-light-grey w3-mobile w3-center w3-border">
+    <h2>Menu</h2>
+    <!-- the following code for the menu images slide show is based on open source code from w3schools. w3css slideshow
+    all images searched from googleimages. creative commons, advanced search features -->
+    <div class="w3-content w3-section"
+      style="max-width:500px;">
+      <img class="mySlides"
+        src="/images/minipav.webp"
+        style="width:100%"
+        alt="a dish of raw fish">
+      <img class="mySlides"
+        src="/images/toffee-cheesecake.webp"
+        style="width:100%"
+        alt="a dish of mussles and scallops">
+      <img class="mySlides"
+        src="/images/musslesandscallops.webp"
+        style="width:100%"
+        alt="a dish of roast lamb with kumara">
+      <img class="mySlides"
+        src="/images/rawfish.webp"
+        style="width:100%"
+        alt="a benoffee pie">
+      <img class="mySlides"
+        src="/images/lambandkumara.webp"
+        style="width:100%"
+        alt="a mini pavalova">
+    </div>
+    <!-- Tables are read from left to right. top to bottom. A screen reader will see the h2 tag first read this then move in to the table. the table from left to right says what the menu item is then a desciption of the meal/item then what it costs. this is a logical menu structure represented by the table tag -->
+    <div class="w3-container w3-mobile w3-center w3-card ">
+      <h3 class="">Appitizers</h3>
+      <table class="w3-table ">
+        <thead>
+          <tr>
+            <!-- After running this code through google chromes accessability it suggested that the lack of table headers presented an accessability issue for screen readers. added <th> elements to all tables. It looks ugly, cant we hide this stuff from the sighted???-->
+            <th>The Appitizer</th>
+            <th>A description of the Appitizer</th>
+            <th class="w3-right-align">The price $</th>
+          </tr>
+        </thead>
+        <tr>
+          <td>REWANA BREAD</td>
+          <td>Tradition Maori bread</td>
+          <td class="w3-right-align">10</td>
+        </tr>
+        <tr>
+          <td>PAUA FRITTER</td>
+          <td>Finely diced pieces of paua, served with a side salad and horipito dressing</td>
+          <td class="w3-right-align">16</td>
+        </tr>
+        <tr>
+          <td>RAW FISH</td>
+          <td>Dried snapper marinated in cocnut cream, served with tomatoes and spring onion</td>
+          <td class="w3-right-align">20</td>
+        </tr>
+        <tr>
+          <td>POACHED SALMON</td>
+          <td>Salmon poached in orange and pistachio glaze, served with rewana bread</td>
+          <td class="w3-right-align">22</td>
+        </tr>
+        <tr>
+          <td>SEAFOOD BASKET</td>
+          <td>Crumber mussles, salt and pepper squid, crumbed hoki bites and garlic prawns</td>
+          <td class="w3-right-align">25</td>
+        </tr>
+      </table>
+      <hr>
+    </div>
+    <br>
+
+    <div class="w3-container w3-mobile w3-center w3-card">
+      <h3>Main</h3>
+      <table class="w3-table">
+        <thead>
+          <tr>
+            <th>The main dish</th>
+            <th>A desription of the main dish</th>
+            <th class="w3-right-align">The price $</th>
+          </tr>
+        </thead>
+        <tr>
+          <td>FISH OF THE DAY</td>
+          <td>Beer battered fish and kumara fries, served with a side salad and homemade tartare.</td>
+          <td class="w3-right-align">25</td>
+        </tr>
+        <tr>
+          <td>MUSSLES AND SCALLOPS</td>
+          <td>Steamed mussel & scallop mousse, honey and soy broth.</td>
+          <td class="w3-right-align">25</td>
+        </tr>
+        <tr>
+          <td>SEAFOOD CHOWDER</td>
+          <td>Creamy chowder filled with terakihi, prawn, hoki, scallops and mussels, served with flatbread.</td>
+          <td class="w3-right-align">30</td>
+        </tr>
+        <tr>
+          <td>PORKBELLY</td>
+          <td>Slow cooked pork belly served on a bed of apple slaw with roasted kumara, and crispy noodle.</td>
+          <td class="w3-right-align">30</td>
+        </tr>
+        <tr>
+          <td>LAMB STEAK</td>
+          <td>New Zealand Lamb coated in a kawakawa crumb, served with Dijon mustard glazed carrots, roasted butternut
+          </td>
+          <td class="w3-right-align">33</td>
+        </tr>
+        <tr>
+          <td>VENISON</td>
+          <td>Venison crusted with horopito, served with glazed plums, cabbage salad and red wine Jus.</td>
+          <td class="w3-right-align">33</td>
+        </tr>
+      </table>
+      <hr>
+    </div>
+    <br>
+
+    <div class="w3-container w3-mobile w3-center w3-card">
+      <h3>Dessert</h3>
+      <table class="w3-table">
+        <thead>
+          <tr>
+            <th>The Dessert</th>
+            <th>A description of the dessert</th>
+            <th class="w3-right-align">The price $</th>
+          </tr>
+        </thead>
+        <tr>
+          <td>KAPITI ICE CREAM</td>
+          <td>Check for daily specials.</td>
+          <td class="w3-right-align">10</td>
+        </tr>
+        <tr>
+          <td>STEAM PUDDING</td>
+          <td>Golden syrup flavoured steam pudding, served with vanilla ice cream</td>
+          <td class="w3-right-align">12</td>
+        </tr>
+        <tr>
+          <td>MINI PAVALOVA</td>
+          <td>Mini Pavlova served with kawakawa and lemon infused cream and fresh fruit.</td>
+          <td class="w3-right-align">16</td>
+        </tr>
+        <tr>
+          <td>BANOFFEE PIE</td>
+          <td>Toffee, fresh bananas and fresh cream.</td>
+          <td class="w3-right-align">16</td>
+        </tr>
+      </table>
+      <hr>
+    </div>
+    <br>
+
+
+    <h2 class="">Drinks</h2>
+    <div class="w3-container w3-mobile w3-center w3-card">
+      <h3>Wine List</h3>
+      <!-- im not sure someone using a screen reader will get the best from the drinks menu. There needs to be some way to add more descriptions to the table elements -->
+      <table class="w3-table">
+        <thead>
+          <tr>
+            <th>RED WINE</th>
+            <th class="w3-right-align">Bottle or Glass $</th>
+          </tr>
+        </thead>
+        <tr>
+          <td>Terrace Edge, Pinot Noir, 2012, Wairarapa</td>
+          <td class="w3-right-align">53/13</td>
+        </tr>
+        <tr>
+          <td>Altitude, Pinot Noir, 2010, Marlborough</td>
+          <td class="w3-right-align">64/15</td>
+        </tr>
+        <tr>
+          <td>Greystone, Pinot Noir, 2012, Wairarapa</td>
+          <td class="w3-right-align">73/17</td>
+        </tr>
+        <tr>
+          <td>Terrace Edge, Syrah, 2012, Wairarapa</td>
+          <td class="w3-right-align">53/13</td>
+        </tr>
+        <tr>
+          <td>Altitude, Syrah, 2010, Marlborough</td>
+          <td class="w3-right-align">64/15</td>
+        </tr>
+        <tr>
+          <td>Greystone, Syrah, 2012, Wairarapa</td>
+          <td class="w3-right-align">73/17</td>
+        </tr>
+        <tr>
+          <td>Pegasus Bay, Merlot, 2013, Wairarapa</td>
+          <td class="w3-right-align">65/14</td>
+        </tr>
+        <tr>
+          <td>Pegasus Bay, Pinot NOir, 2013, Wairarapa</td>
+          <td class="w3-right-align">110</td>
+        </tr>
+      </table>
+      <hr>
+
+      <div>
+        <table class="w3-table">
+          <thead>
+            <tr>
+              <th>WHITE WINE</th>
+              <th class="w3-right-align">Bottle or Glass</th>
+            </tr>
+            <tr>
+          </thead>
+          <td>Spade Oak, Pinot Gris, 2011, Gisbourne</td>
+          <td class="w3-right-align">40/10</td>
+          </tr>
+          <tr>
+            <td>Maude, Pinot Gris, 2017, Otago</td>
+            <td class="w3-right-align">49.50/11</td>
+          </tr>
+          <tr>
+            <td>Charles Wiffen, Chardonnay, 2013, Otago</td>
+            <td class="w3-right-align">48/11</td>
+          </tr>
+          <tr>
+            <td>Amisfield, Reisling, 2016, Otago</td>
+            <td class="w3-right-align">53/12</td>
+          </tr>
+          <tr>
+            <td>Lamont, Reisling, 2010, Otago</td>
+            <td class="w3-right-align">57/13</td>
+          </tr>
+          <tr>
+            <td>Elephanthill, Voignier, 2013, Hawkes Bay</td>
+            <td class="w3-right-align">55/12</td>
+          </tr>
+          <tr>
+            <td>Folium, Sauvignon Blanc, 2011, Marlborough</td>
+            <td class="w3-right-align">52/11</td>
+          </tr>
+          <tr>
+            <td>Billecart-Salmon, Brut Reserve, France</td>
+            <td class="w3-right-align">120</td>
+          </tr>
+        </table>
+      </div>
+      <hr>
+    </div>
+    <br>
+    <div class="w3-container w3-mobile w3-center w3-card">
+      <h3>Beer and Cider</h3>
+      <table class="w3-table w3-center">
+        <thead>
+          <tr>
+            <th>Beer</th>
+            <th>Price $</th>
+          </tr>
+        </thead>
+        <tr>
+          <td>Garage project range</td>
+          <td class="w3-right-align">11</td>
+        </tr>
+        <tr>
+          <td>Tuatara range</td>
+          <td class="w3-right-align">11</td>
+        </tr>
+        <tr>
+          <td>Panhead range</td>
+          <td class="w3-right-align">10</td>
+        </tr>
+        <tr>
+          <td>Coopers Ale</td>
+          <td class="w3-right-align">10</td>
+        </tr>
+        <tr>
+          <td>Heiniken</td>
+          <td class="w3-right-align">11</td>
+        </tr>
+        <tr>
+          <td>Moa Cider</td>
+          <td class="w3-right-align">10</td>
+        </tr>
+        <tr>
+          <td>Crooked Cider</td>
+          <td class="w3-right-align">10</td>
+        </tr>
+      </table>
+      <hr>
+    </div>
+    <br>
+    <div class="w3-container w3-mobile w3-center w3-card">
+      <h3>Non-Alchoholic</h3>
+      <table class="w3-table w3-center">
+        <thead>
+          <tr>
+            <th>Non-alchoholic drinks</th>
+            <th>The price $</th>
+          </tr>
+        </thead>
+        <tr>
+          <td>Mineral Water</td>
+          <td class="w3-right-align">4.00</td>
+        </tr>
+        <tr>
+          <td>Soft drinks</td>
+          <td class="w3-right-align">4.00</td>
+        </tr>
+        <tr>
+          <td>Juice</td>
+          <td class="w3-right-align">4.00</td>
+        </tr>
+        <tr>
+          <td>Coffee</td>
+          <td class="w3-right-align">4.50</td>
+        </tr>
+        <tr>
+          <td>Tea</td>
+          <td class="w3-right-align">3.50</td>
+        </tr>
+      </table>
+
+    </div>
+    <br>
+  </main>
+  <!--The footer container will contain the copyright and author information-->
+  <footer class="w3-container w3-dark-grey w3-mobile">
+    <p>&copy; The Haukai Restaraunt. <a href="privacy.html"
+        class="w3-bar-item w3-button w3-grey">Privacy Statement</a> </p>
+    <p></p>
+  </footer>
+
+  <!-- script from w3css slideshow.  -->
+  <script>
+    var myIndex = 0;
+    carousel();
+
+    function carousel() {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      myIndex++;
+      if (myIndex > x.length) { myIndex = 1 }
+      x[myIndex - 1].style.display = "block";
+      setTimeout(carousel, 2000); // Change image every 2 seconds
+    }
+  </script>
+</body>
+
+</html>
