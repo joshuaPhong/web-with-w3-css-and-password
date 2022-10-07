@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+
+<html lang="en-nz">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible"
+        content="IE=edge" />
+    <title>The Haukai restaraunt home page</title>
+    <meta name="Haukai restaraunt website"
+        content="This is the home page for the restaraunt" />
+    <meta name="author"
+        content="Joshua Fox" />
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1" />
+    <meta name='description'
+        content='The Haukai restaurant Kerikeri with local and Maori menu'>.
+    <meta name="keywords"
+        content="Haukai, Restaurant, Kerikeri, Menu" />
+    <link rel="stylesheet"
+        href="https://www.w3schools.com/w3css/4/w3.css"
+        type="text/css" />
+    <link rel="stylesheet"
+        href="css/css.css"
+        type="text/css" />
+
+
+    <!-- Preload the LCP image with a high fetchpriority so it starts loading with the stylesheet. -->
+    <link rel="preload"
+        fetchpriority="high"
+        as="image"
+        href="/images/medrestimg.webp"
+        type="image/webp">
+</head>
+<!--This will contain the body of the home page it will use the semantic tags header, nav, main, table and the tr(table row) th(table header) td (table data),  and footer tags for easy navigation by screen readers-->
+<!-- semantic tags have implicit ARIA roles and do not need to be defined, role="".W3C
+ARIA in HTML W3C Recommendation 09 December 2021 https://www.w3.org/TR/html-aria/ -->
+<!-- this is implimented throughout all the web [pages] -->
+
+<body>
+    <!--The header element will contain the heading fror the web page-->
+    <header class="w3-container w3-dark-grey w3-mobile">
+        <h1>The Haukai restaraunt</h1>
+    </header>
+    <!--The nav element will be a container for the navigation bar it uses w3 bar class-->
+    <nav class="w3-bar w3-light-grey w3-mobile">
+        <!--The anchor elemnts in this list use w3 class-->
+        <a href="index.html"
+            class="w3-bar-item w3-button w3-grey">Home</a>
+        <a href="pages/contact.html"
+            class="w3-bar-item w3-button">Contact</a>
+        <a href="pages/hours.html"
+            class="w3-bar-item w3-button">Hours</a>
+        <a href="pages/menu.html "
+            class="w3-bar-item w3-button">Menu</a>
+        <a href="pages/reservations.html"
+            class="w3-bar-item w3-button">Reservations</a>
+        <a href="pages/privacy.html"
+            class="w3-bar-item w3-button">Privacy Statement</a>
+        <a href="private/private.html"
+            class="w3-bar-item w3-button">Private</a>
+
+    </nav>
+    <!--The main element is a container for the content of the webpage-->
+    <main class="w3-container w3-light-grey w3-mobile">
+        <div class="w3-panel w3-center">
+            <h2>Welcome to the home page</h2>
+        </div>
+        <!--The hero image and text code are an adaption from w3schools opensource. The code is completed in css,css. It forms the background of the home pages main content-->
+        <div class="w3-container w3-center w3-mobile heroimage">
+            <img src="/images/medrestimg.webp"
+                style="width: 80%; max-width: 800px; max-height: 450px; margin: 10px;"
+                alt="A restaurant setting with a view">
+        </div>
+
+        <hr>
+        <div class="w3-container w3-light-grey w3-mobile aboutus">
+            <p>About Us</p>
+        </div>
+    </main>
+    <!--The footer container will contain the copyright and author information-->
+    <footer class="w3-container w3-dark-grey w3-mobile">
+        <p>&copy; The Haukai Restaraunt.
+            <a href="pages/privacy.html"
+                class="w3-bar-item w3-button w3-grey">Privacy Statement</a>
+            <a id="cssvalid"
+                href="http://jigsaw.w3.org/css-validator/check/referer">
+                <img style="border:0;width:88px;height:31px"
+                    src="http://jigsaw.w3.org/css-validator/images/vcss"
+                    alt="Valid CSS!" />
+            </a>
+        </p>
+
+    </footer>
+
+</body>
